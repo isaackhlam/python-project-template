@@ -4,6 +4,7 @@ install:
 		uv sync --no-dev
 	{% elif cookiecutter.environment_manager == "conda" %}
 		conda env update -f environment.yml
+		conda run -n {{ cookiecutter.package_name }} pip install .
 	{% endif %}
 
 install-dev:
@@ -13,7 +14,8 @@ install-dev:
 	uv run pre-commit install
 	{% elif cookiecutter.environment_manager == "conda" %}
 		conda env update -f environment-dev.yml
-		pre-commit install
+		conda run -n {{ cookiecutter.package_name }} pip install -e ".[dev]"
+		conda run -n pre-commit install
 	{% endif %}
 
 reset:
