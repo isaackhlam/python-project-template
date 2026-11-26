@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-cookiecutter git@github.com:Robinysh/python-template.git
+cookiecutter git@github.com:isaackhlam/python-project-template.git
 
 # cd into the new repository
 git init

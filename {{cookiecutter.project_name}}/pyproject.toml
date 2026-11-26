@@ -3,7 +3,7 @@ name = "{{ cookiecutter.package_name }}"
 version = "1.0.0"
 description = "{{ cookiecutter.project_description }}"
 authors = [
-    {name = "Robin Yuen Shing Hei", email = "robin.ysh@gmail.com"},
+    {name = "Isaac Lam", email = "isaac.lamkh@gmail.com"},
 ]
 dependencies = [
     "typer>=0.15.3",
