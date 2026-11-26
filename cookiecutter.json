@@ -4,6 +4,7 @@
   "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
   "version": "1.0.0",
   "project_description": "",
+  "environment_manager": ["uv", "conda"],
   "_copy_without_render": [
     "*/workflows/*.yml"
 ]
